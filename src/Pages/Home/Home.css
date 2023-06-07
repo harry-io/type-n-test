@@ -1,0 +1,113 @@
+.home_main {
+  margin-top: 6rem;
+}
+
+.home_main_wrapper {
+}
+.input_field_and_counter_wrapper {
+  width: 90%;
+  max-width: 1248px;
+  margin: auto;
+  display: flex;
+}
+.counter_and_select_counter {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter_wrapper {
+  width: 75px;
+  height: 75px;
+  border: 3px solid rgb(255, 68, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #ff4400;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.counter_unit {
+  font-size: small;
+}
+.select_counter {
+  height: 40px;
+  border: 2px solid rgb(255, 68, 0);
+  border-radius: 5px;
+  padding: 0 0 0 5px;
+  margin-left: 1rem;
+  color: #ff4400;
+  outline: 3px solid #ff440000;
+  cursor: pointer;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.select_counter:focus {
+  outline: 3px solid #ff440044;
+}
+.input_wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input_wrapper > input {
+  width: 90%;
+  color: #5a5a5a;
+  font-size: 27px;
+  animation: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  caret-color: rgb(255, 68, 0);
+  background-color: transparent;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #ff4400;
+}
+.input_wrapper > input:disabled {
+  cursor: not-allowed;
+}
+.start_button {
+  width: 9%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 68, 0);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.restart_button {
+  width: 9%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 68, 0);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.image_and_text {
+  width: 90%;
+  margin: auto;
+  max-width: 1248px;
+}
+.start_image {
+  width: 40%;
+}
+.start_heading {
+  font-size: 28px;
+}
+.start_heading > span {
+  color: rgb(255, 68, 0);
+}

@@ -1,0 +1,49 @@
+.navbar_main {
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar_wrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1248px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_section_a {
+  color: rgb(255, 68, 0);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px 1rem;
+  max-height: 45px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  cursor: pointer;
+}
+.navbar_section_b {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.navbar_section_b > div {
+  padding: 10px 1.5rem;
+  border-radius: 50px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  color: #ff4400;
+  cursor: pointer;
+  background-color: #fff;
+}
+.navbar_section_b > div:active {
+  background-color: #ff440049;
+}

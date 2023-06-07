@@ -1,0 +1,22 @@
+.result_main {
+  max-width: 1248px;
+  width: 90%;
+  margin: auto;
+}
+.result_wrapper {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.result_wrapper > div {
+  font-size: 40px;
+  padding: 4rem 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: rgb(255, 68, 0);
+}
+.title {
+  font-size: 18px;
+}

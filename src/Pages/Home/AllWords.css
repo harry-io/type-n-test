@@ -1,0 +1,43 @@
+.all_words_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100px;
+  max-width: 1248px;
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.all_words_wrapper {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  font-size: large;
+}
+.alph_right_detected {
+  background-color: #5eff00;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 5px;
+  font-size: 27px;
+  font-weight: 700;
+  animation: 0.3s ease-in-out;
+}
+.alph_wrong_detected {
+  background-color: rgb(255, 0, 0);
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 5px;
+  font-weight: 700;
+  animation: 0.3s ease-in-out;
+  font-size: 30px;
+}
+.alph_normal_style {
+  font-size: 26px;
+  color: #5a5a5a;
+  animation: 0.3s ease-in-out;
+}

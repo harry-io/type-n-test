@@ -1,0 +1,74 @@
+.login_main {
+  width: 100%;
+  margin: auto;
+}
+.login_wrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1248px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.hero_image {
+  width: 400px;
+}
+.hero_image > img {
+  width: 100%;
+}
+.login_title {
+  color: #ff4400;
+  font-size: 28px;
+}
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 10px;
+}
+.login_input {
+  border-radius: 5px;
+  border: 1px solid rgb(164, 161, 161);
+  outline: 3px solid rgba(107, 99, 95, 0);
+  padding: 10px 1rem;
+  font-size: 19px;
+  caret-color: #ff4400;
+  animation: 0.3s ease-in-out;
+  color: #3f3e3e;
+  font-family: "Montserrat", sans-serif;
+}
+.login_input:focus {
+  outline: 3px solid #ff44004c;
+  border: 1px solid rgba(164, 161, 161, 0);
+  animation: 0.3s ease-in-out;
+}
+.login_input_btn {
+  border: 1px solid #ff4400;
+  padding: 10px 1.5rem;
+  font-size: 19px;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #ff4400;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.login_input_btn:active {
+  background-color: #ff4400c5;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.new_acc > span {
+  color: #ff4400;
+  cursor: pointer;
+}
+.auth_notes {
+  font-size: small;
+}
