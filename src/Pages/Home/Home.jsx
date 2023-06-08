@@ -6,6 +6,8 @@ import Result from "./Result";
 import { useDispatch, useSelector } from "react-redux";
 import { updateSpeed_rec } from "../../Redux/Auth/auth.api";
 import { getLsData } from "../../Utils/ls";
+import PosterTyping from "./PosterTyping";
+import PosterResult from "./PosterResult";
 
 const Home = () => {
   const { speed_rec } = useSelector((store) => store.authReducer);
@@ -192,11 +194,19 @@ const Home = () => {
         )}
         {/* ALL WORDS */}
         {status === "start" && (
-          <AllWords words={words} handleClassName={handleClasName} />
+          <>
+            <AllWords words={words} handleClassName={handleClasName} />
+            <PosterTyping />
+          </>
         )}
 
         {/* RESULT */}
-        {status === "end" && <Result right={right} wrong={wrong} time={time} />}
+        {status === "end" && (
+          <>
+            <Result right={right} wrong={wrong} time={time} />
+            <PosterResult />
+          </>
+        )}
       </div>
     </div>
   );
