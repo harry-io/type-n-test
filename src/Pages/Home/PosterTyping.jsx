@@ -6,10 +6,15 @@ const PosterTyping = () => {
       style={{
         width: "90%",
         margin: "auto",
-        marginTop: "3rem",
+        marginTop: "1rem",
       }}
     >
-      <img width="30%" src="https://i.imgur.com/BtzEhwj.png" alt="type" />
+      <img
+        width="20%"
+        style={{ borderRadius: "10px" }}
+        src="https://i.imgur.com/BtzEhwj.png"
+        alt="type"
+      />
     </div>
   );
 };

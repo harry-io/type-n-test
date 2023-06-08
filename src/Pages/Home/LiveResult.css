@@ -1,24 +1,25 @@
-.result_main {
+.live_result_main {
   max-width: 1248px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 3rem;
+  border-radius: 10px;
 }
-.result_wrapper {
-  width: 52%;
+.live_result_wrapper {
+  width: 30%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-.result_wrapper > div {
-  font-size: 40px;
-  padding: 2rem 0;
+.live_result_wrapper > div {
+  font-size: 25px;
+  padding: 1rem 0;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: rgb(255, 68, 0);
   background-color: #fff;
 }
-.title {
-  font-size: 18px;
+.live_title {
+  font-size: 13px;
 }

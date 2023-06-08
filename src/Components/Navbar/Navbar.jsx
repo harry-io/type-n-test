@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
 import { MdSpeed } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
@@ -29,9 +29,7 @@ const Navbar = () => {
               {username}
             </div>
           )}
-          {is_auth && (
-            <div onClick={() => navigate("/login")}>Speed : {speed_rec}</div>
-          )}
+          {is_auth && <div>Speed : {speed_rec}</div>}
           {!is_auth && <div onClick={() => navigate("/login")}>Login</div>}
           {is_auth && <div onClick={() => dispatch(authLogout())}>Logout</div>}
         </div>

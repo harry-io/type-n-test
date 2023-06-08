@@ -8,6 +8,7 @@ import { updateSpeed_rec } from "../../Redux/Auth/auth.api";
 import { getLsData } from "../../Utils/ls";
 import PosterTyping from "./PosterTyping";
 import PosterResult from "./PosterResult";
+import LiveResult from "./LiveResult";
 
 const Home = () => {
   const { speed_rec } = useSelector((store) => store.authReducer);
@@ -128,8 +129,14 @@ const Home = () => {
     <div className="home_main">
       <div className="home_main_wrapper">
         {/* INPUT FIELD */}
-        <div className="input_field_and_counter_wrapper">
+        <div
+          className="input_field_and_counter_wrapper"
+          style={{ marginTop: status === "end" ? "6rem" : status === "" }}
+        >
           {/* COUNTER AND SELECT-COUNTER*/}
+          {status === "start" && (
+            <LiveResult right={right} wrong={wrong} time={time} />
+          )}
           <div className="counter_and_select_counter">
             {/* COUNTER */}
             <div className="counter_wrapper">
@@ -204,7 +211,6 @@ const Home = () => {
         {status === "end" && (
           <>
             <Result right={right} wrong={wrong} time={time} />
-            <PosterResult />
           </>
         )}
       </div>
