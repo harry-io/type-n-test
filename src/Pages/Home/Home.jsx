@@ -131,7 +131,10 @@ const Home = () => {
         {/* INPUT FIELD */}
         <div
           className="input_field_and_counter_wrapper"
-          style={{ marginTop: status === "end" ? "6rem" : status === "" }}
+          style={{
+            marginTop:
+              status === "end" ? "6rem" : status === "pause" ? "6rem" : "1rem",
+          }}
         >
           {/* COUNTER AND SELECT-COUNTER*/}
           {status === "start" && (
